@@ -27,7 +27,7 @@
 
   <link rel="preload" href="assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261107c">
+  <link rel="stylesheet" href="styles.css?v=20261107d">
   <noscript><link rel="stylesheet" href="noscript.css?v=20261107"></noscript>
 
   <script type="application/ld+json">
@@ -79,9 +79,9 @@
   </svg>
 
   <!-- PROMO TEMPS DES FÊTES : supprimer ce bloc (et les deux autres marqués « PROMO ») pour retirer l'offre -->
-  <div class="promo-bar">
+  <div class="promo-bar" data-promo>
     <div class="container promo-bar-inner">
-      <p><span class="promo-bar-tag">−30&nbsp;%</span> <strong>Offre du temps des Fêtes</strong><span class="promo-bar-extra"> sur votre séance photo, aux premiers venus</span></p>
+      <p><span class="promo-bar-tag">−30&nbsp;%</span> <strong>Offre des Fêtes</strong><span class="promo-bar-extra"> sur votre séance photo,</span> jusqu’au 10&nbsp;janvier<span class="promo-bar-extra">, aux premiers venus</span></p>
       <a href="#reservation">Réserver <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
@@ -114,7 +114,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <!-- PROMO TEMPS DES FÊTES -->
-          <a class="promo-pill" href="#reservation"><span class="promo-pill-tag">−30&nbsp;%</span><span>Offre du temps des Fêtes</span></a>
+          <a class="promo-pill" href="#reservation" data-promo><span class="promo-pill-tag">−30&nbsp;%</span><span>Offre des Fêtes · jusqu’au 10&nbsp;janvier</span></a>
           <!-- FIN PROMO -->
           <p class="eyebrow">Studio photo · Rimouski, QC</p>
           <h1>Vos instants.<br>Leur <em>émotion</em>.<br>Votre image.</h1>
@@ -319,7 +319,7 @@
           </p>
           <ul class="booking-steps">
             <!-- PROMO TEMPS DES FÊTES -->
-            <li class="promo-item"><span class="promo-item-tag">−30&nbsp;%</span><span><strong>Offre du temps des Fêtes</strong>, aux premiers venus, selon les disponibilités</span></li>
+            <li class="promo-item" data-promo><span class="promo-item-tag">−30&nbsp;%</span><span><strong>Offre du temps des Fêtes</strong> jusqu’au 10&nbsp;janvier, aux premiers venus, selon les disponibilités</span></li>
             <!-- FIN PROMO -->
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Aucun paiement en ligne</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Confirmation après échange avec le studio</li>
@@ -555,6 +555,6 @@
     <button type="button" class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Photo suivante"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
   </dialog>
 
-  <script src="script.js?v=20261107b" defer></script>
+  <script src="script.js?v=20261107d" defer></script>
 </body>
 </html>

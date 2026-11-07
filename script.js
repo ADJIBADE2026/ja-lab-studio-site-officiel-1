@@ -15,6 +15,14 @@
   const FORM_ENDPOINT = `https://formsubmit.co/ajax/${STUDIO_EMAIL}`;
   const USE_AGENDA = /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(APPS_SCRIPT_URL.trim());
 
+  /* ---------- Promotion du temps des Fêtes ----------
+     L'offre s'affiche jusqu'au 10 janvier 2027 inclus (heure de Rimouski),
+     puis disparaît automatiquement. Pour changer la date, modifiez PROMO_END. */
+  const PROMO_END = "2027-01-11T00:00:00-05:00";
+  if (Date.now() >= Date.parse(PROMO_END)) {
+    $$("[data-promo]").forEach(el => { el.hidden = true; });
+  }
+
   /* ---------- Année du pied de page ---------- */
   $$("[data-year]").forEach(el => { el.textContent = String(new Date().getFullYear()); });
 

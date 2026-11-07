@@ -1066,7 +1066,8 @@ strong { font-weight: 600; color: var(--ink); }
   .footer-bottom { flex-direction: column; }
   .promo-bar { font-size: 0.82rem; }
   .promo-bar-inner { flex-wrap: nowrap; gap: 0.8rem; min-height: 40px; }
-  .promo-bar-extra { display: none; }
+  .promo-bar-extra,
+  .promo-bar a { display: none; }
   .promo-bar-tag { margin-right: 0.2rem; }
   .whatsapp-float { right: 14px; bottom: 14px; padding: 0; width: 56px; justify-content: center; }
   .whatsapp-float span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
