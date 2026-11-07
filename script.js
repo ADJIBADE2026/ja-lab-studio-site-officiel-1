@@ -10,7 +10,7 @@
         Chaque demande crée alors un évènement « À confirmer » dans le Google Agenda
         de jalabstudio@gmail.com, envoie un courriel au studio et une confirmation au client.
      2) Tant que ce champ est vide, les demandes sont envoyées par courriel seulement (FormSubmit). */
-  const APPS_SCRIPT_URL = "";
+  const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyH08ZZLtwg05hZ3fOfoUYOFkX1o54RDxFuQdj-ZZBkDrgbrnKkbTi_Zfjmo5g6V3wOTA/exec";
   const STUDIO_EMAIL = "jalabstudio@gmail.com";
   const FORM_ENDPOINT = `https://formsubmit.co/ajax/${STUDIO_EMAIL}`;
   const USE_AGENDA = /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(APPS_SCRIPT_URL.trim());
