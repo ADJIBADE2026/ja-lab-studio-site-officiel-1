@@ -1,0 +1,20 @@
+/* Chargé uniquement quand JavaScript est désactivé : le menu reste visible sur mobile. */
+@media (max-width: 960px) {
+  .menu-toggle { display: none !important; }
+  .header-inner { flex-wrap: wrap; padding-bottom: 0.6rem; }
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.2rem;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: 0.95rem;
+  }
+  .nav a:not(.btn) { padding: 0.3rem 0; border: 0; }
+  .nav-cta { display: none; }
+}
