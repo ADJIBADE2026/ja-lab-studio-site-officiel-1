@@ -27,7 +27,7 @@
 
   <link rel="preload" href="assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261107">
+  <link rel="stylesheet" href="styles.css?v=20261107c">
   <noscript><link rel="stylesheet" href="noscript.css?v=20261107"></noscript>
 
   <script type="application/ld+json">
@@ -78,6 +78,15 @@
     <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></g></symbol>
   </svg>
 
+  <!-- PROMO TEMPS DES FÊTES : supprimer ce bloc (et les deux autres marqués « PROMO ») pour retirer l'offre -->
+  <div class="promo-bar">
+    <div class="container promo-bar-inner">
+      <p><span class="promo-bar-tag">−30&nbsp;%</span> <strong>Offre du temps des Fêtes</strong><span class="promo-bar-extra"> sur votre séance photo, aux premiers venus</span></p>
+      <a href="#reservation">Réserver <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+  <!-- FIN PROMO -->
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="#accueil" class="brand" aria-label="JA Lab Studio – retour à l’accueil">
@@ -104,6 +113,9 @@
     <section id="accueil" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
+          <!-- PROMO TEMPS DES FÊTES -->
+          <a class="promo-pill" href="#reservation"><span class="promo-pill-tag">−30&nbsp;%</span><span>Offre du temps des Fêtes</span></a>
+          <!-- FIN PROMO -->
           <p class="eyebrow">Studio photo · Rimouski, QC</p>
           <h1>Vos instants.<br>Leur <em>émotion</em>.<br>Votre image.</h1>
           <p class="lead">
@@ -306,6 +318,9 @@
             confirmer la date, le lieu et les détails de votre séance.
           </p>
           <ul class="booking-steps">
+            <!-- PROMO TEMPS DES FÊTES -->
+            <li class="promo-item"><span class="promo-item-tag">−30&nbsp;%</span><span><strong>Offre du temps des Fêtes</strong>, aux premiers venus, selon les disponibilités</span></li>
+            <!-- FIN PROMO -->
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Aucun paiement en ligne</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Confirmation après échange avec le studio</li>
             <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Courriel de confirmation de réception</li>

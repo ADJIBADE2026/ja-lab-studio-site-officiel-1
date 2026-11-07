@@ -935,6 +935,67 @@ strong { font-weight: 600; color: var(--ink); }
 .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; text-decoration: none; font-size: 0.93rem; }
 .back-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
+/* ---------- Promotion du temps des Fêtes ---------- */
+.promo-bar {
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.88rem;
+}
+.promo-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 1.2rem;
+  min-height: 44px;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.promo-bar p { margin: 0; }
+.promo-bar strong { color: #fff; }
+.promo-bar-tag,
+.promo-pill-tag,
+.promo-item-tag {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border-radius: 4px;
+  background: var(--gold);
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.promo-bar-tag { margin-right: 0.35rem; }
+.promo-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.promo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.4rem;
+  padding: 0.35rem 1rem 0.35rem 0.4rem;
+  border: 1px solid rgba(240, 173, 31, 0.55);
+  border-radius: 999px;
+  background: #fff7e3;
+  color: var(--ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.promo-pill:hover { border-color: var(--gold-deep); background: #fff1cf; }
+.promo-pill-tag { border-radius: 999px; padding: 0.2rem 0.6rem; }
+.hero-copy .promo-pill + .eyebrow { display: flex; }
+.booking-steps .promo-item { align-items: flex-start; gap: 0.7rem; }
+.promo-item-tag { flex: none; font-size: 0.8rem; margin-top: 0.1rem; }
+
 /* =========================================================
    Responsive
    ========================================================= */
@@ -1003,6 +1064,10 @@ strong { font-weight: 600; color: var(--ink); }
   .contact-grid { grid-template-columns: 1fr; }
   .faq-list summary { font-size: 1.25rem; }
   .footer-bottom { flex-direction: column; }
+  .promo-bar { font-size: 0.82rem; }
+  .promo-bar-inner { flex-wrap: nowrap; gap: 0.8rem; min-height: 40px; }
+  .promo-bar-extra { display: none; }
+  .promo-bar-tag { margin-right: 0.2rem; }
   .whatsapp-float { right: 14px; bottom: 14px; padding: 0; width: 56px; justify-content: center; }
   .whatsapp-float span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .lightbox-figure { padding: 4.5rem 0.75rem 5.5rem; }
